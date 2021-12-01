@@ -82,8 +82,16 @@
     - The Node Module System
         * Import via require('./path-to-file') for custom files or require('module') for core & third-party modules.
         * Export via module.exports or just exports (for multipl;e exports)
-* 40 Useful Resources & Links
+* 40 - Useful Resources & Links
     - [Official Node.js Docs](https://nodejs.org/en/docs/guides/)
     - [Full Node.js Reference (for all core modules)](https://nodejs.org/dist/latest/docs/api/)
     - [More about the Node.js Event Loop](https://nodejs.org/en/docs/guides/event-loop-timers-and-nexttick/)
     - [Blocking and Non-Blocking Code](https://nodejs.org/en/docs/guides/dont-block-the-event-loop/)
+
+# Section 4: Improved Development Workflow and 
+* 41 - Module Introduction
+* 42 - Understanding NPM Scripts
+    - npm init
+    - package.json config by adding the "scripts": start and start-server
+* 43 - Installing 3rd Party Packages
+    - Auto Reboot Package- nodemon
