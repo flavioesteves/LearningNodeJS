@@ -95,3 +95,59 @@
     - package.json config by adding the "scripts": start and start-server
 * 43 - Installing 3rd Party Packages
     - Auto Reboot Package- nodemon
+    - --save --> Prod
+    - --save-dev --> Development
+    - -g --> global
+    - Delete node_modules, run npm install to reinstall the modules
+* 44 - Global Features vs Core Modules bs Third-Party Modules
+* 45 - Using Nodemon for Autorestarts
+    - Update package.json with "start":"nodemon" isntead of "node"
+* 46 - Global & Local npm Packages
+* 47 - Understanding different Error Types
+    - Types of Errors:
+        * Syntax Errors
+        * Runtime Errors
+        * Logical Errors
+* 48 - Finding & Fixing Syntax Errors
+* 49 - Dealing with Runtime Errors
+* 50 - Logical Errors
+* 51 - Using the Debugger
+* 52 - Restart the Debugger Automatically After Editing our App
+    - Config lauch.json file
+* 53 - Debugging Node.js in VS Code
+    - [https://code.visualstudio.com/docs/nodejs/nodejs-debugging](https://code.visualstudio.com/docs/nodejs/nodejs-debugging)
+* 54 - Changing Variables in the Debug Console
+* 55 - Wrap up
+    - npm
+    - 3rd Party Packages
+    - Types of Errors
+    - Debugging
+* 56 - Useful Resources & Links
+    - [More on debugging Node.js](https://nodejs.org/en/docs/guides/debugging-getting-started/)
+    - [Debugging Node in Visual Studio Code](https://code.visualstudio.com/docs/nodejs/nodejs-debugging)
+
+# Section 5: Express.js
+* 57 - Module Introduction
+    - What is Express.js?
+    - Using Middleware
+    - Working with Requests & Reposnses
+    - Routing
+    - Returning HTML Pages (Files)
+* 58 - What is Express.js?
+    - Server Logis is Complex!
+    - Focus only in Business Logic
+    - This Framework do the Heavy Lifting!
+    - Alternatives:
+        * Vanilla Node.js
+        * Adonis.js
+        * Koa
+        * Sails.js
+* 59 - Installing Express.js
+    - npm install --save express --> install because is needed it for production
+* 60 - Adding Middleware
+    - Request --> Middleware next() --> Middleware response.send() --> Response
+    - app.use {next()}
+* 61 - How Middleware Works
+    - response.send()
+* 62 - Express.js - Looking Behind the Scenes
+    - 
