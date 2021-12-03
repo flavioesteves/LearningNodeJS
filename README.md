@@ -81,7 +81,7 @@
         * Import via require('module')
     - The Node Module System
         * Import via require('./path-to-file') for custom files or require('module') for core & third-party modules.
-        * Export via module.exports or just exports (for multipl;e exports)
+        * Export via module.exports or just exports (for multiple exports)
 * 40 - Useful Resources & Links
     - [Official Node.js Docs](https://nodejs.org/en/docs/guides/)
     - [Full Node.js Reference (for all core modules)](https://nodejs.org/dist/latest/docs/api/)
@@ -150,4 +150,16 @@
 * 61 - How Middleware Works
     - response.send()
 * 62 - Express.js - Looking Behind the Scenes
-    - 
+    - app.listen();
+* 63 - Handling Different Routes
+    - app.use(PATH, CALLBACK)
+* 64 - Parsing Incoming Requests
+    - response.redirect()
+    - request.body this 
+    - 3rd party package for parsing  the response: body-parser
+    - bodyParser.urlencoded()
+* 65 - Limiting Middleware Execution to POST Requests
+    - app.get
+    - app.post
+* 66 - Using Express Router
+    - express.Router()

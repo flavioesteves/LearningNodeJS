@@ -2,17 +2,20 @@
 const http = require('http');
 //### 3rd party pkg ###
 const express = require('express');
+const bodyParser = require('body-parser');
+
+const adminRoutes = require('./routes/admin');
+const shopRoutes = require('./routes/shop');
 
 const app = express();
-app.use((request, response, next) => {
-    console.log('Middleware 1');
-    next(); //Allows the request to continue to the next middleware in line
-});
 
-app.use((request, response, next) => {
-    console.log('Middleware 2');
-    response.send('<h1>Hello from Express</h1>')
-});
+app.use(bodyParser.urlencoded({extended:false}));
 
-const server = http.createServer(app);
-server.listen(3000);
+app.use(adminRoutes);
+app.use(shopRoutes);
+
+app.listen(3000);
+
+//Same as above
+//const server = http.createServer(app);
+//server.listen(3000);
