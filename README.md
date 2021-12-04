@@ -163,3 +163,18 @@
     - app.post
 * 66 - Using Express Router
     - express.Router()
+* 67 - Adding a 404 Error Page
+    - response.status();
+* 68 - Filtering Paths
+    - Express.js documentation
+    - app.use(FILTER,ROUTE)
+* 69 - Creating HTML Pages
+    - Views Folder
+* 70 - Serving HTML Pages (Important)
+    - Module path
+* 71 - Returning a 404 Page
+* 72 - A Hint!
+* 73 - Using a Helper Function for Navigation
+    - module.exports = path.dirname(require.main.filename);
+* 74 - Styling our Pages
+    - 
