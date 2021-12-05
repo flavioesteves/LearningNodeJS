@@ -177,4 +177,10 @@
 * 73 - Using a Helper Function for Navigation
     - module.exports = path.dirname(require.main.filename);
 * 74 - Styling our Pages
-    - 
+* 75 - Serving Files Statically
+    - app.use(express.static(path.join(__dirname, 'public')));
+* 76 - Wrap up
+* 77 - Useful Resources & Links
+    - [Express.js Official Docs](https://expressjs.com/en/starter/installing.html)
+
+# Section 6:Working with Dynamic Content & Adding Templating Engines
