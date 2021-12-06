@@ -184,3 +184,26 @@
     - [Express.js Official Docs](https://expressjs.com/en/starter/installing.html)
 
 # Section 6:Working with Dynamic Content & Adding Templating Engines
+* 78 - Module Introduction
+    - Managing Data (without a Database)
+    - Render Dynamic Content in our views
+    - Understanding Templating Engines
+* 79 - Sharing Data Across Requests & Users
+* 80 - Templating Engines - An Overview
+    - HTMLish Template
+    - Node/Express Content
+    - Templating Engine
+    - Replaces Placeholders /Snippets with HTML Content --> HTML File to the user
+    - Available Templating Engines:
+        * EJS: <p><%= name %></p> --> Use normal HTML and plain JS in your templates
+        * Pug(Jade): p #{name} --> Use minimal HTML and custom template language
+        * Handlebars: <p>{{ name }}</p> --> Use normal HTML and custom template language
+* 81 - Installing & Implementing Pug
+    - npm install --save ejs pug express-handlebars
+    - After the app creation, use the set() to configure the template globally
+        * app.set('view engine', TEMPLATE ENGINE)
+* 82 - Outputting Dynamic Content
+* 83 - Official Pug Docs
+    * [https://pugjs.org/api/getting-started.html](https://pugjs.org/api/getting-started.html)
+* 84 - Converting HTML Files to Pug
+* 85 - Adding a Layout
