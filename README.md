@@ -207,3 +207,6 @@
     * [https://pugjs.org/api/getting-started.html](https://pugjs.org/api/getting-started.html)
 * 84 - Converting HTML Files to Pug
 * 85 - Adding a Layout
+    - block keyword
+    - extends 
+* 86 - Finishing the Pug Template
