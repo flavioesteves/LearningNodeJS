@@ -210,3 +210,30 @@
     - block keyword
     - extends 
 * 86 - Finishing the Pug Template
+    - Added path property to the response.render()
+* 87 - Avoiding an Error
+* 88 - Working with Handlebars
+* 89 - Converting out Project to Handlebars
+* 90 - Adding the Layout to Handlebars
+* 91 - Working with EJS
+    - <% use vanilla JS %>
+* 92 - Working on the Layout with Partials
+    - <%- include('DIRECTORY OF THE PARTIAL') %>
+* 93 - Wrap Up
+    - Next chapters will be used ejs as template engine
+* 94 - [OPTIONAL] Assignment Solution
+* 95 - Useful Resources & Links
+    - [Pug Docs](https://pugjs.org/api/getting-started.html)
+    - [Handlebars Docs](https://handlebarsjs.com/)
+    - [EJS Docs](http://ejs.co/#docs)
+
+# Section 7:The Mode View Controller(MVC)
+* 96 - Module Introduction
+    - Structuring your Code
+* 97 - What is the MVC?
+    - Separation of Concerns
+        * Models: Represent your data in your code, Work with your data (e.g.save, fetch) 
+        * Views: What the users sees, Decoupled from your application code 
+        * Controllers: Connecting your Models and your Views, Contains the "in-beetween" logic
+    - Routes --> Controllers: Split across Middleware Functions
+* 98 - Adding Controllers
