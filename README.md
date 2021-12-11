@@ -237,3 +237,28 @@
         * Controllers: Connecting your Models and your Views, Contains the "in-beetween" logic
     - Routes --> Controllers: Split across Middleware Functions
 * 98 - Adding Controllers
+    - New subfolder
+* 99 - Finishing the Controllers
+* 100 - Adding a Product Model
+    - Introduction to the Models concept: creation of the Classes
+* 101 - Storing Data in Files Via the Model
+    - path, fs
+* 102 - Fetching Data from Files Via the Model
+* 103 - Refactoring the File Storage Code
+* 104 - Wrap Up
+    - Model: 
+        * Responsible for representing your data
+        * Responsible for managing your data (saving, fetching, ...)
+        * Doesn't matter if you manage data in memory, files, databases
+        * Contains data-related logic
+    - View: 
+        * What the user sees
+        * Shouldn't contain too much logic (Handlebars!)
+    - Controller:
+        * Connects Model and View
+        * Should onluy make sure that the two can communicate (in both directions)
+* 105 - Useful Resources & Links
+    - [More on MVC](https://developer.mozilla.org/en-US/docs/Glossary/MVC)
+# Section 8: Optional Enhacing the APP
+* 106 - Module Introduction
+* 107 - Creating the Shop Structure
