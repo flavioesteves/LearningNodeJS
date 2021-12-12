@@ -273,3 +273,13 @@
 
 # Section 9: Dynamic Routes & Advanced Models
 * 115 - Module Introduction
+    - Passing Route Params
+    - Using Query Params
+    - Enhance our Models
+* 116 - Preparations
+* 117 - Applied Changes
+* 118 - Adding the Product ID to the Path
+* 119 - Extracting Dynamic Params
+    - ":" is the syntax for dynamic path
+    - the order is important, first the static then the dynamic paths
+* 120 - Loading Product Detail Data
