@@ -1,8 +1,8 @@
-const Product = require('../models/product')
+const Product = require('../models/product');
 
 exports.getAddProduct = (request, response, next) => {
     // response.sendFile(path.join(rootDir, 'views', 'add-product.html'));
-    response.render('add-product', {
+    response.render('admin/add-product', {
         pageTitle: 'Add Product',
         path: '/admin/add-product',
         formsCSS: true,
@@ -12,21 +12,25 @@ exports.getAddProduct = (request, response, next) => {
 };
 
 exports.postAddProduct = (request, response) => {
-    const product = new Product(request.body.title);
+    const title = request.body.title;
+    const imageUrl = request.body.imageUrl;
+    const price = request.body.price;
+    const description = request.body.description;
+
+    const product = new Product(title,imageUrl,description,price);
     product.save();
     response.redirect('/');
 };
 
-exports.getProducts = (request,response, next) => {
+exports.getProducts = (request, response, next) => {
     Product.fetchAll((products) => {
-        response.render('shop', {
+        response.render('admin/products', {
             prods: products,
-            pageTitle: 'Shop',
-            path: '/',
+            pageTitle: 'Admin Products',
+            path: '/admin/products',
             hasProducts: products.length > 0,
             activeShop: true,
             productCSS: true
         });
     });
-
-};
+} 

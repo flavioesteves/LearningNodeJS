@@ -259,6 +259,17 @@
         * Should onluy make sure that the two can communicate (in both directions)
 * 105 - Useful Resources & Links
     - [More on MVC](https://developer.mozilla.org/en-US/docs/Glossary/MVC)
+
 # Section 8: Optional Enhacing the APP
 * 106 - Module Introduction
 * 107 - Creating the Shop Structure
+* 108 - Working on the Navigation
+* 109 - Registering the Routes
+* 110 - Storing Product Data
+* 111 - Displaying Product Data
+* 112 - Editing & Deleting Products
+* 113 - Adding Another Item
+* 114 - Useful Resources & Links
+
+# Section 9: Dynamic Routes & Advanced Models
+* 115 - Module Introduction
