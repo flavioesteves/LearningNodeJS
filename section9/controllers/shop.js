@@ -13,8 +13,13 @@ exports.getProducts = (req, res, next) => {
 //C119
 exports.getProduct = (request,response, next) => {
   const productId = request.params.productId;
-  console.log(productId);
-  response.redirect('/');
+  Product.findById(productId, product => {
+      response.render('shop/product-detail',{
+        product: product,
+        pageTitle: product.title,
+        path: '/products'
+      });
+  });
 };
 
 exports.getIndex = (req, res, next) => {

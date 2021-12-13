@@ -283,3 +283,4 @@
     - ":" is the syntax for dynamic path
     - the order is important, first the static then the dynamic paths
 * 120 - Loading Product Detail Data
+* 121 - Rendering the Product Detail View
