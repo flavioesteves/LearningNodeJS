@@ -284,3 +284,8 @@
     - the order is important, first the static then the dynamic paths
 * 120 - Loading Product Detail Data
 * 121 - Rendering the Product Detail View
+* 122 - Passing Data with POST Requests
+    - template.esj: example: "<%- include('../includes/add-to-cart.ejs',{product: product}) %>"
+* 123 - Adding a Cart Model
+    - convert a string to number "+ +string"
+* 124 - Using Query Params
