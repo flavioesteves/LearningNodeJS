@@ -302,3 +302,11 @@
     - More on Models: Cart
 * 134 - Useful Resources & Links
  - [Official Routing Docs](https://expressjs.com/en/guide/routing.html)
+
+# Section 10: SQL Introduction
+* 135 - Module Introduction
+    - Storing Data in Databases
+    - Different Kinds of Databases (SQL vs NoSQL)
+    - Using SQL in a Node.js APP
+* 136 - Choosing a Database
+    - SQL vs NoSQL
