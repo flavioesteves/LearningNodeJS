@@ -1,10 +1,14 @@
-const { request } = require('express');
+const {
+  request,
+  response
+} = require('express');
 const Product = require('../models/product');
 
 exports.getAddProduct = (req, res, next) => {
   res.render('admin/edit-product', {
     pageTitle: 'Add Product',
     path: '/admin/add-product',
+    editing: false,
   });
 };
 
@@ -13,20 +17,20 @@ exports.postAddProduct = (req, res, next) => {
   const imageUrl = req.body.imageUrl;
   const price = req.body.price;
   const description = req.body.description;
-  const product = new Product(title, imageUrl, description, price);
+  const product = new Product(null, title, imageUrl, description, price);
   product.save();
   res.redirect('/');
 };
 
 exports.getEditProduct = (req, res, next) => {
   const editMode = req.query.edit;
-  
+
   if (!editMode) {
     return res.redirect('/');
   }
   const productId = req.params.productId;
-  Product.findById(productId, product =>{
-    if(!product) {
+  Product.findById(productId, product => {
+    if (!product) {
       return res.redirect('/');
     }
     res.render('admin/edit-product', {
@@ -36,6 +40,25 @@ exports.getEditProduct = (req, res, next) => {
       editing: editMode,
     });
   })
+};
+
+exports.postEditProduct = (request, response, next) => {
+  const productId = request.body.productId;
+  const updatedTitle = request.body.title;
+  const updatedPrice = request.body.price;
+  const updatedImageUrl = request.body.imageUrl;
+  const updatedDescription = request.body.description;
+  const updatedProduct = new Product(productId, updatedTitle, updatedImageUrl, updatedDescription, updatedPrice, );
+  updatedProduct.save();
+  response.redirect('/admin/products');
+};
+
+exports.postDeleteProduct = (request, response, next) => {
+  const productId = request.body.productId;
+  Product.deleteById(productId);
+  //deleteProduct.save();
+  response.redirect('/admin/products');
+
 };
 
 

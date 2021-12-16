@@ -12,14 +12,14 @@ exports.getProducts = (req, res, next) => {
 };
 
 //C119
-exports.getProduct = (request,response, next) => {
+exports.getProduct = (request, response, next) => {
   const productId = request.params.productId;
   Product.findById(productId, product => {
-      response.render('shop/product-detail',{
-        product: product,
-        pageTitle: product.title,
-        path: '/products'
-      });
+    response.render('shop/product-detail', {
+      product: product,
+      pageTitle: product.title,
+      path: '/products'
+    });
   });
 };
 
@@ -34,19 +34,42 @@ exports.getIndex = (req, res, next) => {
 };
 
 exports.getCart = (req, res, next) => {
-  res.render('shop/cart', {
-    path: '/cart',
-    pageTitle: 'Your Cart'
+  Cart.getCart(cart => {
+    Product.fetchAll(products => {
+      const cartProducts = [];
+      for (product of products) {
+        const cartProductData = cart.products.find(prod => prod.id === product.id);
+        if (cartProductData) {
+          cartProducts.push({
+            productData: product,
+            qty: cartProductData.qty
+          });
+        }
+      }
+      res.render('shop/cart', {
+        path: '/cart',
+        pageTitle: 'Your Cart',
+        products: cartProducts
+      });
+    });
   });
 };
 
-exports.postCart = (request,response, next) => {
+exports.postCart = (request, response, next) => {
   const productId = request.body.productId;
-  Product.findById(productId,(product) => {
+  Product.findById(productId, (product) => {
     Cart.addProduct(productId, product.price);
   });
   response.redirect('/cart');
-  
+
+};
+
+exports.postCartDeleteProduct = (request, response, next) => {
+  const productId = request.body.productId;
+  Product.findById(productId, product => {
+    Cart.deleteProduct(productId, product.price);
+    response.redirect('/cart');
+  });
 };
 
 exports.getOrders = (req, res, next) => {

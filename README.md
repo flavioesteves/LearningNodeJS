@@ -289,3 +289,16 @@
 * 123 - Adding a Cart Model
     - convert a string to number "+ +string"
 * 124 - Using Query Params
+* 125 - Pre-Populating the Edit Product Page with Data
+* 126 - Linking to the Edit Page
+* 127 - Editing the Product Data
+* 128 - Adding the Product-Delete Functionality
+* 129 - Deleting Cart Items
+* 130 - Displaying Cart Items on the Cart Page
+* 131 - Deleting Cart Items
+* 132 - Fixing a Delete Product Bug
+* 133 - Wrap Up
+    - Dynamic Routing
+    - More on Models: Cart
+* 134 - Useful Resources & Links
+ - [Official Routing Docs](https://expressjs.com/en/guide/routing.html)
