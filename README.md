@@ -310,3 +310,47 @@
     - Using SQL in a Node.js APP
 * 136 - Choosing a Database
     - SQL vs NoSQL
+    - Goal: Store Data and Make it Easily Accessible -->
+    - Use a Database! - Quicker Acess than with a File
+    - SQL Databases: MySQL
+    - NoSQL Databases: MongoDB
+    - What;s SQL?
+        - Tables: USers, Orders, Products (rows = records).
+    - Core SQL Database Characteristics
+        - Data Schema: id,name,age
+        - All Data (in a Table has to fit!)
+        - Data Relations: One-to-One, One-to-Many, Many-to-Many: Tables are conected
+    - SQL Queries
+        - Example: SELECT * FROM users where age > 28
+        - SQL Keywords/Syntax: SELECT, FROM, WHERE
+        - Parameters / Data: *, users, age > 28
+* 137 - NoSQL Introduction
+    - Database: Shop
+    - Collections(= tables(sql)): Users, Orders
+    - Documents(= records(sql)): {name:'Max', age:29}
+    - Schemaless!
+    - No Real Relastions: is going for Duplicate Data approach
+    - Advantage is when is collecting data don't need to join tables
+    - NoSQL Characteristics
+        - No Data Schema -> No Structure required!
+            - {name,id,age}
+            - {id.age}
+        - NO Data Relations
+            - You CAN relate documents but you don't have to (you shouldn't do it too   much or your queries become slow)
+* 138 - Comparing SQL and NoSQL
+    - Horizontal vs Vertical Scaling
+    - Horizontal Scaling: Add More Servers (and merge Data into one Database)
+    - Vertical Scaling: Improve Server Capacity/ Hardware
+    - SQL:
+        - Data uses Schemas
+        - Relations!
+        - Data is distributed across multiple tables
+        - Horizontal scaling is difficult/impossible; Vertical scaling is possible
+        - Limitations fr lots of (thousands) read & write queries per second
+    - NoSQL:
+        - Schema-less
+        - No (or very few) Relations
+        - Data is typecally merged/ nested in a few collections
+        - Both horizontal and vertical scaling is possible
+        - Great performance for mass read & write requests
+ 139 - Setting Up MySQL
