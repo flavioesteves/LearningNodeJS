@@ -354,3 +354,13 @@
         - Both horizontal and vertical scaling is possible
         - Great performance for mass read & write requests
  139 - Setting Up MySQL
+
+
+# Section 12: Working with NoSQL & Using MongoDB
+
+  176. Module Introduction
+  177. What is MongoDB?
+  178. Relations in NoSQL
+  179. Setting Up MongoDB
+  180. Installing the MongoDB Driver
+
