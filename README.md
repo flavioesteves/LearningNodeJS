@@ -392,6 +392,7 @@
   207. Useful Resources & Links
   208. Two Adjustments
 
-# Sectiom 13: Working with Moongoose
+# Section 13: Working with Moongoose
   209. Module Introduction
   210. What os Moongoose?
+        - [Moongoose](https://mongoosejs.com/) 
