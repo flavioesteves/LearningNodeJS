@@ -396,3 +396,30 @@
   209. Module Introduction
   210. What os Moongoose?
         - [Moongoose](https://mongoosejs.com/) 
+  211. Connetction to the MongoDB Server with mongoose
+  212. Creatign the Product Schema 
+  213. Saving Data Through Mongoose
+  214. Fetching All Products
+  215. Fetching a Single Product
+  216. Updating Prouducts
+  217. Deleting Products
+  218. Adding and Using a User Model
+  219. Using Relations in Mongoose
+  220. One Important Thing About Fetching Relations
+        - Select, Populate 
+  221. Working on the Shopping Cart
+  222. Loading the Cart
+  223. Deleting Cart Items
+  224. Creating & Getting Orders
+  225. Storing All Order Related Data
+  226. Clearing the Cart After Storing an Order
+  227. Getting & Displaying the Orders
+  228. Wrap Up
+  229. Useful Resources & Links
+
+# Section 14: Sessions & Cookies
+  230. Module Introduction
+  231. What is a Cookie?
+  232. The Current Project status
+  233. Optional: Creating the Login Form
+  234. Adding the Request Driven Login Solution
