@@ -6,6 +6,7 @@ const mongoose = require('mongoose');
 const dotenv = require("dotenv");
 const errorController = require('./controllers/error');
 const User = require('./models/user');
+const session = require("express-session");
 
 const app = express();
 
@@ -19,6 +20,11 @@ const authRoutes = require('./routes/auth');
 
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(express.static(path.join(__dirname, 'public')));
+app.use(session({
+  secret: "my secret",
+  resave: false,
+  saveUninitialized: false
+}));
 
 
 const _ID = "64733e16b7d8a46253daba82";
@@ -35,7 +41,6 @@ app.use((req, res, next) => {
 app.use('/admin', adminRoutes);
 app.use(shopRoutes);
 app.use(authRoutes);
-
 app.use(errorController.get404);
 
 
