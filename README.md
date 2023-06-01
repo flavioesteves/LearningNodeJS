@@ -423,3 +423,37 @@
   232. The Current Project status
   233. Optional: Creating the Login Form
   234. Adding the Request Driven Login Solution
+  235. Setting a Cookie
+  236. Manipulating Cookies
+  237. Configuring Cookies
+  238. What is a Session?
+  239. Initializing a Session Middleware
+  240. Using the Session Middleware
+  241. Using MongoDB to Store Sessions
+  242. Sessions & Cookies - A Short Summary
+        - Cookie --> Client 
+        - Session -> Server ( most common use case for authentication )
+  243. Deleting a cookie
+  244. Fixing Some Minor Bugs
+  245. Making "Add to Cart" Work Again
+  246. Two tiny Improvements
+  247. Wrap Update
+  * Cookies:
+    - Client Side
+    - Works well with Sessions
+    - Is not recommended to store Sensitive Data
+  * Sessions: 
+    - Server side
+    - Can store Anything in sessions
+    - Good for storing sensitive data
+  248. Code Adjustments
+  249. Useful Resources & Links
+
+
+# Section 15: Adding Authentication
+
+250. Module Introduction
+251. What is Authentication?
+252. How is Authentication Implemented?
+253. Out Updated Project status
+254. Implementubg and Authentication Flow

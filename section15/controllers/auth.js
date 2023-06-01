@@ -1,4 +1,6 @@
-const User = require("../models/user");
+const User = require('../models/user');
+
+
 
 exports.getLogin = (req, res, next) => {
   console.log(req.session);
@@ -31,4 +33,17 @@ exports.postLogout = (req, res, next) => {
     console.log(err);
     res.redirect("/");
   });
-}
+};
+
+
+
+exports.getSignup = (req, res, next) => {
+  res.render('auth/signup', {
+    path: '/signup',
+    pageTitle: 'Signup',
+    isAuthenticated: false
+  });
+};
+
+
+exports.postSignup = (req, res, next) => { };
